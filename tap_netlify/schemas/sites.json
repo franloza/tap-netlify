@@ -1,0 +1,209 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "custom_domain": {
+      "type": "string"
+    },
+    "domain_aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "password": {
+      "type": "string"
+    },
+    "notification_email": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "ssl_url": {
+      "type": "string"
+    },
+    "admin_url": {
+      "type": "string"
+    },
+    "screenshot_url": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "dateTime"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "dateTime"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "ssl": {
+      "type": "boolean"
+    },
+    "force_ssl": {
+      "type": "boolean"
+    },
+    "managed_dns": {
+      "type": "boolean"
+    },
+    "deploy_url": {
+      "type": "string"
+    },
+    "published_deploy": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        }
+    },
+    "account_name": {
+      "type": "string"
+    },
+    "account_slug": {
+      "type": "string"
+    },
+    "git_provider": {
+      "type": "string"
+    },
+    "deploy_hook": {
+      "type": "string"
+    },
+    "processing_settings": {
+      "type": "object",
+      "properties": {
+        "skip": {
+          "type": "boolean"
+        },
+        "css": {
+          "type": "object",
+          "properties": {
+              "bundle": {
+                  "type": "boolean"
+              },
+              "minify": {
+                  "type": "boolean"
+              }
+          }
+      },
+        "js": {
+          "type": "object",
+          "properties": {
+              "bundle": {
+                  "type": "boolean"
+              },
+              "minify": {
+                  "type": "boolean"
+              }
+          }
+      },
+        "images": {
+          "type": "object",
+          "properties": {
+            "optimize": {
+              "type": "boolean"
+            }
+          }
+        },
+        "html": {
+          "type": "object",
+          "properties": {
+            "pretty_urls": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "build_settings": {
+      "type": "object",
+      "properties": {
+          "id": {
+              "type": "integer"
+          },
+          "provider": {
+              "type": "string"
+          },
+          "deploy_key_id": {
+              "type": "string"
+          },
+          "repo_path": {
+              "type": "string"
+          },
+          "repo_branch": {
+              "type": "string"
+          },
+          "dir": {
+              "type": "string"
+          },
+          "functions_dir": {
+              "type": "string"
+          },
+          "cmd": {
+              "type": "string"
+          },
+          "allowed_branches": {
+              "type": "array",
+              "items": {
+                  "type": "string"
+              }
+          },
+          "public_repo": {
+              "type": "boolean"
+          },
+          "private_logs": {
+              "type": "boolean"
+          },
+          "repo_url": {
+              "type": "string"
+          },
+          "env": {
+              "type": "string"
+          },
+          "installation_id": {
+              "type": "integer"
+          },
+          "stop_builds": {
+              "type": "boolean"
+          }
+        }
+      },
+    "id_domain": {
+      "type": "string"
+    },
+    "default_hooks_data": {
+      "type": "object",
+      "properties": {
+        "access_token": {
+          "type": "string"
+        }
+      }
+    },
+    "build_image": {
+      "type": "string"
+    },
+    "prerender": {
+      "type": "string"
+    }
+  }
+}
+
+
+

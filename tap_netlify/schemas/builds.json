@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "deploy_id": {
+      "type": "string"
+    },
+    "site_id": {
+      "type": "string"
+    },
+    "sha": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    },
+    "error": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
