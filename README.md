@@ -4,6 +4,10 @@
 
 This package is NOT officially supported by Netlify. Users are welcome to open issues or pull requests to improve the tap.
 
+Extracts the following resources from [Netlify API](https://open-api.netlify.com/):
+- [sites](https://open-api.netlify.com/#operation/listSites)
+- [builds](https://open-api.netlify.com/#operation/listSiteBuilds)
+
 Built with the Meltano [SDK](https://gitlab.com/meltano/sdk) for Singer Taps.
 
 ## Installation
