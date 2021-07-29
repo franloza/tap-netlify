@@ -133,3 +133,7 @@ dmypy.json
 
 # Pycharm
 .idea/
+
+# Meltano
+meltano.yml
+.meltano/
