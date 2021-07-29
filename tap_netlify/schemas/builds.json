@@ -2,25 +2,25 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "deploy_id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "site_id": {
-      "type": "string"
+       "type": ["string", "null"]
     },
     "sha": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "done": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "error": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "created_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "date-time"
     }
   }

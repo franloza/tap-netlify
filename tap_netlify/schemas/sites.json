@@ -2,104 +2,104 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "state": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "plan": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "name": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "custom_domain": {
-      "type": "string"
+     "type": ["string", "null"]
     },
     "domain_aliases": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": ["string", "null"]
       }
     },
     "password": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "notification_email": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "url": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "ssl_url": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "admin_url": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "screenshot_url": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "created_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "dateTime"
     },
     "updated_at": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "dateTime"
     },
     "user_id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "session_id": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "ssl": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "force_ssl": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "managed_dns": {
-      "type": "boolean"
+     "type": ["boolean", "null"]
     },
     "deploy_url": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "published_deploy": {
         "type": "object",
         "properties": {
           "id": {
-            "type": "string"
+            "type": ["string", "null"]
           }
         }
     },
     "account_name": {
-      "type": "string"
+     "type": ["string", "null"]
     },
     "account_slug": {
-      "type": "string"
+     "type": ["string", "null"]
     },
     "git_provider": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "deploy_hook": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "processing_settings": {
       "type": "object",
       "properties": {
         "skip": {
-          "type": "boolean"
+          "type": ["boolean", "null"]
         },
         "css": {
           "type": "object",
           "properties": {
               "bundle": {
-                  "type": "boolean"
+                  "type": ["boolean", "null"]
               },
               "minify": {
-                  "type": "boolean"
+                  "type": ["boolean", "null"]
               }
           }
       },
@@ -107,10 +107,10 @@
           "type": "object",
           "properties": {
               "bundle": {
-                  "type": "boolean"
+                  "type": ["boolean", "null"]
               },
               "minify": {
-                  "type": "boolean"
+                  "type": ["boolean", "null"]
               }
           }
       },
@@ -118,7 +118,7 @@
           "type": "object",
           "properties": {
             "optimize": {
-              "type": "boolean"
+              "type": ["boolean", "null"]
             }
           }
         },
@@ -126,7 +126,7 @@
           "type": "object",
           "properties": {
             "pretty_urls": {
-              "type": "boolean"
+              "type": ["boolean", "null"]
             }
           }
         }
@@ -136,71 +136,68 @@
       "type": "object",
       "properties": {
           "id": {
-              "type": "integer"
+              "type": ["integer", "null"]
           },
           "provider": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "deploy_key_id": {
-              "type": "string"
+             "type": ["string", "null"]
           },
           "repo_path": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "repo_branch": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "dir": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "functions_dir": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "cmd": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "allowed_branches": {
               "type": "array",
               "items": {
-                  "type": "string"
+                  "type": ["string", "null"]
               }
           },
           "public_repo": {
-              "type": "boolean"
+              "type": ["boolean", "null"]
           },
           "private_logs": {
-              "type": "boolean"
+              "type": ["boolean", "null"]
           },
           "repo_url": {
-              "type": "string"
-          },
-          "env": {
-              "type": "string"
+              "type": ["string", "null"]
           },
           "installation_id": {
-              "type": "integer"
+              "type": ["integer", "null"]
           },
           "stop_builds": {
-              "type": "boolean"
+              "type": ["boolean", "null"]
           }
         }
       },
     "id_domain": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "default_hooks_data": {
       "type": "object",
       "properties": {
         "access_token": {
-          "type": "string"
+          "type": ["string", "null"]
         }
       }
     },
     "build_image": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "prerender": {
-      "type": "string"
+      "type": ["string", "null"]
     }
   }
 }
