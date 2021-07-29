@@ -21,8 +21,7 @@ class TapNetlify(Tap):
 
     config_jsonschema = th.PropertiesList(
         th.Property("auth_token", th.StringType, required=True),
-        # TODO: Support start_date
-        th.Property("start_date", th.DateTimeType)
+        th.Property("user_agent", th.StringType, default="Tap-Netlify"),
     ).to_dict()
 
     def discover_streams(self) -> List[Stream]:

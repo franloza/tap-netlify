@@ -2,6 +2,8 @@
 
 `tap-netlify` is a Singer tap for [Netlify API](https://docs.netlify.com/api/get-started/).
 
+This package is NOT officially supported by Netlify. Users are welcome to open issues or pull requests to improve the tap.
+
 Built with the Meltano [SDK](https://gitlab.com/meltano/sdk) for Singer Taps.
 
 ## Installation
@@ -14,7 +16,10 @@ pipx install  git+https://github.com/franloza/netlify-tap.git
 
 ### Accepted Config Options
 
-- [ ] `Developer TODO:` Provide a list of config options accepted by the tap.
+The following configuration options are available:
+
+- auth_token (required): User-generated token. See how to obtain it from the Netlify UI [here](https://docs.netlify.com/cli/get-started/#obtain-a-token-in-the-netlify-ui)
+- user_agent (optional): It should be set to something that includes the name of your app, and a contact email address should the API provider need to contact you for any reason. [Example](https://docs.netlify.com/api/get-started/#make-a-request)
 
 A full list of supported settings and capabilities for this
 tap is available by running:
@@ -22,10 +27,6 @@ tap is available by running:
 ```bash
 tap-netlify --about
 ```
-
-### Source Authentication and Authorization
-
-- [ ] `Developer TODO:` If your tap requires special access on the source system, or any special authentication requirements, provide those here.
 
 ## Usage
 
@@ -38,10 +39,6 @@ tap-netlify --version
 tap-netlify --help
 tap-netlify --config CONFIG --discover > ./catalog.json
 ```
-
-## Developer Resources
-
-- [ ] `Developer TODO:` As a first step, scan the entire project for the text "`TODO:`" and complete any recommended steps, deleting the "TODO" references once completed.
 
 ### Initialize your Development Environment
 
