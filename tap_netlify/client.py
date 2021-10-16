@@ -45,6 +45,10 @@ class NetlifyStream(RESTStream):
                 if "next" in rel:
                     params = parse_qs(urlparse(url.replace('<', '').replace('>', '')).query)
                     next_page_token = params["page"][0]
+        else:
+            # This is a workaround to deal with some endpoints that do not return a Link header.
+            if response.json():
+                next_page_token = previous_token + 1 if previous_token else 2
         return next_page_token
 
     def get_url_params(
