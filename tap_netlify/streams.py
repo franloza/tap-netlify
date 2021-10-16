@@ -31,3 +31,13 @@ class BuildsStream(NetlifyStream):
     primary_keys = ["id"]
     replication_key = None
     schema_filepath = SCHEMAS_DIR / "builds.json"
+
+
+class DeploysStream(NetlifyStream):
+    """Define deploys stream."""
+    parent_stream_type = SitesStream
+    name = "deploys"
+    path = "sites/{site_id}/deploys"
+    primary_keys = ["id"]
+    replication_key = None
+    schema_filepath = SCHEMAS_DIR / "deploys.json"

@@ -1,0 +1,101 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "null"]
+    },
+    "site_id": {
+      "type": ["string", "null"]
+    },
+    "user_id": {
+      "type": ["string", "null"]
+    },
+    "build_id": {
+      "type": ["string", "null"]
+    },
+    "state": {
+      "type": ["string", "null"]
+    },
+    "name": {
+      "type": ["string", "null"]
+    },
+    "url": {
+      "type": ["string", "null"]
+    },
+    "ssl_url": {
+      "type": ["string", "null"]
+    },
+    "admin_url": {
+      "type": ["string", "null"]
+    },
+    "deploy_url": {
+      "type": ["string", "null"]
+    },
+    "deploy_ssl_url": {
+      "type": ["string", "null"]
+    },
+    "screenshot_url": {
+      "type": ["string", "null"]
+    },
+    "review_id": {
+      "type": ["integer", "null"]
+    },
+    "draft": {
+      "type": ["boolean", "null"]
+    },
+    "required": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_functions": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "string"
+      }
+    },
+    "error_message": {
+      "type": ["string", "null"]
+    },
+    "branch": {
+      "type": ["string", "null"]
+    },
+    "commit_ref": {
+      "type": ["string", "null"]
+    },
+    "commit_url": {
+      "type": ["string", "null"]
+    },
+    "skipped": {
+      "type": ["boolean", "null"]
+    },
+    "created_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "published_at": {
+      "type": ["string", "null"],
+      "format": "date-time"
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "context": {
+      "type": ["string", "null"]
+    },
+    "locked": {
+      "type": ["boolean", "null"]
+    },
+    "review_url": {
+      "type": ["string", "null"]
+    },
+    "framework": {
+      "type": ["string", "null"]
+    }
+  }
+}

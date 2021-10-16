@@ -6,12 +6,13 @@ from singer_sdk import Tap, Stream
 from singer_sdk import typing as th
 
 from tap_netlify.streams import (
-    SitesStream, BuildsStream
+    SitesStream, BuildsStream, DeploysStream
 )
 
 STREAM_TYPES = [
     SitesStream,
-    BuildsStream
+    BuildsStream,
+    DeploysStream
 ]
 
 
