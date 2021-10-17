@@ -16,12 +16,6 @@
     "custom_domain": {
      "type": ["string", "null"]
     },
-    "domain_aliases": {
-      "type": "array",
-      "items": {
-        "type": ["string", "null"]
-      }
-    },
     "password": {
       "type": ["string", "null"]
     },
@@ -158,12 +152,6 @@
           },
           "cmd": {
               "type": ["string", "null"]
-          },
-          "allowed_branches": {
-              "type": "array",
-              "items": {
-                  "type": ["string", "null"]
-              }
           },
           "public_repo": {
               "type": ["boolean", "null"]

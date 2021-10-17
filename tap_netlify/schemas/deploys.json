@@ -43,18 +43,6 @@
     "draft": {
       "type": ["boolean", "null"]
     },
-    "required": {
-      "type": ["array", "null"],
-      "items": {
-        "type": "string"
-      }
-    },
-    "required_functions": {
-      "type": ["array", "null"],
-      "items": {
-        "type": "string"
-      }
-    },
     "error_message": {
       "type": ["string", "null"]
     },
