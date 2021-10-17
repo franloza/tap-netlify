@@ -7,6 +7,8 @@ This package is NOT officially supported by Netlify. Users are welcome to open i
 Extracts the following resources from [Netlify API](https://open-api.netlify.com/):
 - [sites](https://open-api.netlify.com/#operation/listSites)
 - [builds](https://open-api.netlify.com/#operation/listSiteBuilds)
+- [deploys](https://open-api.netlify.com/#operation/listSiteDeploys)
+
 
 Built with the Meltano [SDK](https://gitlab.com/meltano/sdk) for Singer Taps.
 
